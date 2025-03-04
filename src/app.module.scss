@@ -1,0 +1,15 @@
+.applicationContainer {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+.configSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

@@ -1,0 +1,64 @@
+$paginationItemBg: transparent;
+$paginationItemBg__selected: rgb(77, 184, 78);
+$paginationItemBg__selected: rgb(77, 184, 78);
+$paginationItemBg__hover: rgba(11, 31, 53, 0.1);
+$paginationItemBg__active: rgba(11, 31, 53, 0.16);
+$paginationItemColor: rgb(11, 31, 53);
+$paginationItemColor__selected: rgb(255, 255, 255);
+$paginationItemOutline: #646cff solid 1px;
+
+
+.paginationContainer {
+    display: flex;
+    gap: 8px;
+
+    &__horizontal {
+        flex-direction: row;
+    }
+
+    &__vertical {
+        flex-direction: column;
+    }
+}
+
+.paginationItem {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: $paginationItemBg;
+    color: $paginationItemColor;
+    font-size: 16px;
+    line-height: 1;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__selected {
+        color: $paginationItemColor__selected;
+        background: $paginationItemBg__selected;
+        outline: $paginationItemOutline;
+    }
+
+
+    &__disabled {
+        opacity: 0.4;
+        cursor: auto;
+    }
+
+    &:not(.paginationItem__selected) {
+        &:not(.paginationItem__disabled) {
+            cursor: pointer;
+            &:hover {
+                background: $paginationItemBg__hover;
+            }
+            &:active {
+                background: $paginationItemBg__active;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,7 @@
+.arrowIcon {
+    &__right {}
+    &__left {
+        transform: rotate(180deg);
+        transform-origin: center center;
+    }
+}
