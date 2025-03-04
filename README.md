@@ -13,9 +13,10 @@
 
 ### 3. DevMode
 * `npm run dev` - Запуск сервера для разработки на `http://localhost:5173/`
-* 
+
 ## Реализованные компоненте
 
 * UI пагинации лежат по пути `src/components/ui/pagination/`
 * Логика в хуке лежит по пути `src/components/logic/hooks/usePaginationController.ts`
 * Логика в классе и хук к нему лежат по пути `src/components/logic/classes/`
+* Compound компоненты, объединяющие в себе ui и logic по пути `src/components/compound/`
